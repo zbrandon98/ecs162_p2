@@ -1,0 +1,55 @@
+header {
+    background-color: #E18C72;
+    color: #F6F4F4;
+    padding: 10px;
+    text-align: center;
+    border-width: 1px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #394368;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: #7D897E;
+    color: #F6F4F4;
+    padding: 10px;
+    text-align: center;
+    border-width: 1px;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* Display list items horizontally */
+}
+
+nav ul li a {
+    display: inline-block; /* Display anchor tags as blocks */
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+nav ul li a:hover {
+    background-color: #f0f0f0;
+}
+
+/* 
+*   Color Wheel
+*   White       #F6F4F4
+*   Light Blue  #B5C8D8
+*   Light Red   #E18C72
+*   Olive Green #7D897E
+*   Pale Yellow #F0CF6C
+*   Dark Yellow #E9C668
+*   Navy Blue   #394368
+*/
