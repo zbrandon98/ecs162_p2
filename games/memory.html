@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>Memory Game</title>
+  <link rel="stylesheet" href="../css/memory.css"></link>
+  <link rel="stylesheet" href="../css/style.css"></link>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <script src="../js/memory.js" charset="utf-8"></script>
+</head>
+  <body>
+    <header>
+      <nav class="navbar">
+          <h2 id="navbar_title">
+              <span style="color: red;">B</span>
+              <span style="color: orange;">l</span>
+              <span style="color: yellow;">o</span>
+              <span style="color: green;">c</span>
+              <span style="color: blue;">k</span>
+              <span style="color: indigo;"> </span>
+              <span style="color: violet;">A</span>
+              <span style="color: purple;">r</span>
+              <span style="color: pink;">c</span>
+              <span style="color: crimson;">a</span>
+              <span style="color: coral;">d</span>
+              <span style="color: chocolate;">e</span>
+          </h2>
+          <ul class="navbar_links">
+              <li class="navbar_link">
+                  <a href="../index.html">Home</a>
+              </li>
+              <li class="navbar_link">
+                  <a href="#contact_info">Contact</a>
+              </li>
+          </ul>
+      </nav>
+  </header>
+    <div class="box">
+      <div class="main_menu">
+        <h1 id="game_title"> Memory Game</h1>
+      </div>
+      <div class="game_container">
+        <div id="scores">
+          <div id="high_score_board">Highscore:<span id="high_score">0</span></div>
+          <div id="score_board">Score:<span id="result">0</span></div>
+          <div id="win_board">You Win!</div>
+        </div>
+        <div class="grid">
+        </div>
+      </div>
+      <div class="game_controls">
+        <button id="start_button">Start</button>
+        <button id="reset_button">Restart</button>
+        <button id="instructions_button">Instructions</button>
+      </div>
+      <div id="instructions">
+        <p>Click on the cards to reveal the hidden image. Match the cards to win the game.</p>
+      </div>
+    </div>
+    <footer id="contact_info">
+      <section>
+          <div>
+              ©Brandon Zarate 2024.
+          </div>
+          <div>
+              University of California, Davis 
+          </div>
+
+          <div>
+              Open Source Game:  <a href="https://github.com/kubowania/memory-game/tree/master">Memory by kubowania</a>
+          </div>
+      </section>
+  </footer>
+  </body>
+</html>

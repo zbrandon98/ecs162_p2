@@ -1,55 +1,165 @@
 header {
-    background-color: #E18C72;
-    color: #F6F4F4;
-    padding: 10px;
+    background-color: #17191b;
+    color: #fff;
+    padding: 10px 0;
     text-align: center;
-    border-width: 1px;
+    border-top: 3px solid #2a3747;
+    width: 100%;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #394368;
+    font-family: 'Press Start 2P', cursive;
+    background-color:  #f1f0ee;
+    background-color: #2a3747;
+    width: 100%;
     margin: 0;
     padding: 0;
 }
 
 footer {
-    background-color: #7D897E;
-    color: #F6F4F4;
-    padding: 10px;
+    background-color: #17191b;
+    color: #fff;
+    padding: 10px 0;
     text-align: center;
-    border-width: 1px;
+    border-top: 3px solid #2a3747;
+    width: 100%;
 }
-
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
-nav ul li {
-    display: inline; /* Display list items horizontally */
-}
 
-nav ul li a {
-    display: inline-block; /* Display anchor tags as blocks */
-    padding: 10px 15px;
+
+a:link, a:visited {
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
 }
 
-nav ul li a:hover {
-    background-color: #f0f0f0;
+#games_grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;  
+    margin: 10px;
+    padding: 20px;
 }
 
-/* 
-*   Color Wheel
-*   White       #F6F4F4
-*   Light Blue  #B5C8D8
-*   Light Red   #E18C72
-*   Olive Green #7D897E
-*   Pale Yellow #F0CF6C
-*   Dark Yellow #E9C668
-*   Navy Blue   #394368
-*/
+#navbar_title {
+    padding: 10px;
+    font-size: 1.5em;
+    margin: 0;
+
+}
+
+.navbar_links {   
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    padding-left: 300px; 
+    padding-right: 300px;
+}
+
+@media (max-width: 1000px) {
+    .navbar_links {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media (max-width: 700px) {
+    #navbar_title {
+        font-size: 1.2em;
+    }
+    .navbar_links {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.game_card {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    height: 400px;
+    width: 300px;
+    text-align: center;
+    background-color: #2a3747;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+}
+
+.game_card:hover {
+    transform: scale(1.05);
+}
+
+.game_card_cover {
+    width: 100%;
+    height: 250px;
+
+}
+
+.game_card_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #f1f0ee; 
+    height: 100%;
+    
+}
+
+.game_card_title {
+    font-size: 1.5em;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0;
+    width: 100%;
+}
+
+.game_card_description {
+    font-size: 1em;
+    width: 95%;
+}
+
+.game_card_button {
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    width: 100%;
+    height: 30px;
+    transition: background-color 0.5s;
+}
+
+.game_card_button:hover {
+    animation: colorChange 2s infinite;
+}
+
+#balloon_game {
+    background-color: #33a5ff;
+    border-color:#33a5ff;
+}
+#meteor_game {
+    background-color: #731d2b;
+    border-color:#731d2b;
+}
+#wack_a_mole_game{
+    background-color: #238531;
+    border-color:#238531;
+}
+
+@keyframes colorChange {
+    0%, 100% { background-color: #ff4d4d ; }
+    50% { background-color: #731d2b; }
+}
+

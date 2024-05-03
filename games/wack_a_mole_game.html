@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/wack_a_mole_game.css">
+    <title>Whack a Mole!</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h2 id="navbar_title">
+                <span style="color: red;">B</span>
+                <span style="color: orange;">l</span>
+                <span style="color: yellow;">o</span>
+                <span style="color: green;">c</span>
+                <span style="color: blue;">k</span>
+                <span style="color: indigo;"> </span>
+                <span style="color: violet;">A</span>
+                <span style="color: purple;">r</span>
+                <span style="color: pink;">c</span>
+                <span style="color: crimson;">a</span>
+                <span style="color: coral;">d</span>
+                <span style="color: chocolate;">e</span>
+            </h2>
+            <ul class="navbar_links">
+                <li class="navbar_link">
+                    <a href="../index.html">Home</a>
+                </li>
+                <li class="navbar_link">
+                    <a href="#contact_info">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="game_container">
+            <div class="game_title">
+                Wack a Mole
+            </div>
+            <section class="game_menu">
+                <button class="game_button_card" id="start_button">
+                    Start
+                </button>
+                <button class="game_button_card" id="difficulty_selector">
+                    Easy
+                </button>
+                <button class="game_button_card" id="show_description">
+                    Description
+                </button>
+                <button class="game_button_card" id="instructions">
+                    Instructions
+                </button>
+                <div id="text_description">
+                </div>
+            </section>
+            <div id="game_scoreboard">
+                <div class="scores">
+                    <div class="game_highscore">
+                        Highscore: <span id="game_highscore">0</span>
+                    </div>
+                    <div class="game_score">
+                        Score: <span id="score">0</span>
+                    </div>
+                </div>
+                <div class="game_time">
+                    Time: <span id="time">0</span>
+                </div>
+            </div>
+            <div id="game_area_play">
+                <div class="mole_hole"><div class="mole"></div></div>
+                <div class="mole_hole"><div class="mole"></div></div>
+                <div class="mole_hole"><div class="mole"></div></div>
+                <div class="mole_hole"><div class="mole"></div></div>
+                <div class="mole_hole"><div class="mole"></div></div>
+                <div class="mole_hole"><div class="mole"></div></div>
+                <div class="mole_hole"><div class="mole"></div></div>
+                <div class="mole_hole"><div class="mole"></div></div>
+                <div class="mole_hole"><div class="mole"></div></div>
+            </div>
+            <div id="game_controls">
+                <button class="game_button_card" id="game_restart">
+                    Restart
+                </button>
+                <button class="game_button_card" id="game_quit">
+                    Quit
+                </button>
+            </div>
+    </section>
+    </main>
+    <footer id="contact_info">
+        <section>
+            <div>
+                ©Brandon Zarate 2024.
+            </div>
+            <div>
+                University of California, Davis 
+            </div>
+
+            <div>
+                Open Source Game:  <a href="https://github.com/kubowania/memory-game/tree/master">Memory by kubowania</a>
+            </div>
+        </section>
+    </footer>
+    <script src="../js/wack_a_mole_game.js"></script>
+</body>
+</html>

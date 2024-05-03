@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/simon_says.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="../js/simon_says.js" defer></script>
+    <title>Simon Says</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h2 id="navbar_title">
+                <span style="color: red;">B</span>
+                <span style="color: orange;">l</span>
+                <span style="color: yellow;">o</span>
+                <span style="color: green;">c</span>
+                <span style="color: blue;">k</span>
+                <span style="color: indigo;"> </span>
+                <span style="color: violet;">A</span>
+                <span style="color: purple;">r</span>
+                <span style="color: pink;">c</span>
+                <span style="color: crimson;">a</span>
+                <span style="color: coral;">d</span>
+                <span style="color: chocolate;">e</span>
+            </h2>
+            <ul class="navbar_links_simon">
+                <li class="navbar_link">
+                    <a href="../index.html">Home</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="game_container">
+        <h1 class="game_title">Simon Says</h1>
+        <div class="game_status">
+            <div class="game_score">High Score: <span id="high_score">0</span></div>
+            <div id="game_over_message">Game Over!!</div>
+            <div class="game_score">Score: <span id="score">0</span></div>
+            <div class="game_round">Round: <span id="round">1</span></div>
+        </div>
+        <div class="game_board">
+            <button class="game_button" id="green_button"></button>
+            <button class="game_button" id="red_button"></button>
+            <button class="game_button" id="yellow_button"></button>
+            <button class="game_button" id="blue_button"></button>
+        </div>
+        <div class="game_controls">
+            <button id="start_button">Start</button>
+            <button id="reset_button">Restart</button>
+            <button id="toggle_instructions_button">Instructions</button>
+        </div>
+        <div id="instructions"> <!-- Instructions initially hidden -->
+            <p>Press 'Start' to begin the game. Watch the sequence of colors and then repeat it by pressing the buttons in the same order. Each round gets progressively harder as the sequence gets longer. Press 'Reset' to restart the game at any time.</p>
+        </div>
+    </main>
+    <footer id="contact_info_simon_says">
+        <section>
+            <div>
+                ©Brandon Zarate 2024.
+            </div>
+            <div>
+                University of California, Davis 
+            </div>
+
+            <div>
+                Open Source Game:  <a href="https://github.com/kubowania/memory-game/tree/master">Memory by kubowania</a>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

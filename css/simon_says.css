@@ -1,0 +1,174 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000; 
+    color: #FFF;
+}
+
+
+.game_container {
+    text-align: center; 
+    padding: 20px;
+    background: #333; 
+    border: 4px solid #FFF;
+    box-shadow: none; 
+    width: 290px;
+    height: 500px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.game_status {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.game_score, .game_round {
+    font-size: 20px;
+    color: #FFF; 
+}
+
+
+.game_title {
+    font-size: 24px; 
+    color: #FFD700; 
+}
+
+h1 {
+    font-size: 1.6em;
+    margin: 0;
+
+}
+
+.game_score {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.game_board {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+.game_button {
+    padding: 40px;
+    border: 4px solid #FFF; 
+    background: none; 
+    cursor: pointer;
+}
+
+.game_button:active {
+    transform: scale(0.9);
+    filter: brightness(0.9);
+}
+
+.game_controls button {
+    padding: 10px 20px;
+    margin-top: 5px;
+    font-size: 1em;
+    background-color: #626262; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.game_controls button:hover {
+    background-color: #333;
+}
+
+.disabled {
+    opacity: 0.5; 
+    pointer-events: none; 
+}
+
+
+.highlighted {
+    background-color: #FFFF00;
+    transition: background-color 0.3s, transform 0.3s;
+    transform: scale(1.05);
+    z-index: 100;
+    cursor: not-allowed;
+}
+
+#red_button {
+    background-color: red;
+}
+
+#green_button {
+    background-color: green;
+}
+
+#blue_button {
+    background-color: blue;
+}
+
+#yellow_button {
+    background-color: yellow;
+}
+
+@keyframes flash {
+    0%, 100% { color: red; }
+    50% { color: white; }
+}
+
+#toggle_instructions_button {
+    font-size: .8em;
+}
+  
+#game_over_message {
+    font-size: 1.2em;
+    animation: flash 1s infinite;
+    padding: 10px;
+    display: block;
+    visibility: hidden;
+}
+
+#instructions {
+    max-height: 0px;
+    height: 160px;
+    overflow:scroll;
+    transition: max-height 0.5s ease-in-out;
+    background-color: #626262; 
+    margin-top: 10px;
+    padding: 0 2px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    font-size: .8em;
+}
+
+#instructions.open {
+    max-height: 200px; 
+    padding: 10px 4px;
+}
+
+#reset_button {
+    display: none;
+}
+
+#high_score {
+    transition: font-size 0.5s ease, color 0.5s ease;
+}
+
+#high_score.updated {
+    color: #FFD700;
+}
+
+#contact_info_simon_says {
+    display: none;
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+

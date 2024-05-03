@@ -5,31 +5,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Games on Demand</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#games">Games</a></li>
+        <nav class="navbar">
+            <h2 id="navbar_title">
+                <span style="color: red;">B</span>
+                <span style="color: orange;">l</span>
+                <span style="color: yellow;">o</span>
+                <span style="color: green;">c</span>
+                <span style="color: blue;">k</span>
+                <span style="color: indigo;"> </span>
+                <span style="color: violet;">A</span>
+                <span style="color: purple;">r</span>
+                <span style="color: pink;">c</span>
+                <span style="color: crimson;">a</span>
+                <span style="color: coral;">d</span>
+                <span style="color: chocolate;">e</span>
+            </h2>
+            <ul class="navbar_links">
+                <li class="navbar_link">
+                    <a href="./index.html">Home</a>
+                </li>
+                <li class="navbar_link">
+                    <a href="#contact_info">Contact</a>
+                </li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="game-container">
-            <div class="game-title">
-                test
-            </div>
-            <div class="game-play-area">
-                area to play game
-            </div>
-        </div>
+        <section id="games_grid">
+            <article class="game_card" id="balloon_game">
+                <img class="game_card_cover" src="./assets/img/simon_says.png" alt="Simon Says Game">
+                <section class="game_card_info">
+                    <div class="game_card_title">
+                        Simon Says
+                    </div>
+                    <p class="game_card_description">
+                        How good is your memory?
+                    </p>
+                    <form action="./games/simon_says.html">
+                        <button class="game_card_button">
+                            Play
+                        </button>
+                    </form>
+                </section>
+            </article>
+            <article class="game_card" id="meteor_game">
+                <img class="game_card_cover" src="./assets/img/minecraft.png" alt="Minecraft Memory Game">
+                <section class="game_card_info">
+                    <div class="game_card_title">
+                        Memory 
+                    </div>
+                    <p class="game_card_description">
+                        Can you remember your blocks?
+                    </p>
+                    <form action="./games/memory.html">
+                        <button class="game_card_button">
+                            Play
+                        </button>
+                    </form>
+                </section>
+            </article>
+            <article class="game_card" id="wack_a_mole_game">
+                <img class="game_card_cover" src="./assets/whack_a_mole/game_wack_a_mole.png" alt="Whack a Mole Game">
+                <section class="game_card_info">
+                    <div class="game_card_title">
+                        Wack a Mole
+                    </div>
+                    <p class="game_card_description">
+                        Hit as many moles as you can!
+                    </p>
+                    <form action="./games/wack_a_mole_game.html">
+                        <button class="game_card_button">
+                            Play
+                        </button>
+                    </form>
+                </section>
+            </article>   
+        </section>
+
 
     </main>
-    <footer>
+    <footer id="contact_info">
         <section>
-            ©Brandon Zarate 2024 <br>
-            University of California, Davis <br>
+            <div>
+                ©Brandon Zarate 2024.
+            </div>
+            <div>
+                University of California, Davis 
+            </div>
+
+            <div>
+                Open Source Game:  <a href="https://github.com/kubowania/memory-game/tree/master">Memory by kubowania</a>
+            </div>
         </section>
     </footer>
             
